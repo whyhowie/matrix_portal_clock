@@ -39,6 +39,7 @@ class CellGrid:
                 print(f"Generations: {generations}")
                 old_text = new_text
                 self.board.set_clock_color(self.text_color)
+                self.board.set_clock(new_text)
 
                 if not first_run:
                     print("Checking for game exit conditions.")

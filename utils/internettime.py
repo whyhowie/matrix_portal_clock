@@ -20,7 +20,7 @@ class InternetTime:
     def __init__(
         self,
         network,
-        timezone_name="America/Chicago",
+        timezone_name="America/New_York",
         seconds_between_updates=300,
         disable_internet=False,
         debug=False,

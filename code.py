@@ -34,7 +34,7 @@ esp._debug = True
 
 print(f"Network Initialized, Free Memory: {gc.mem_free()}.")
 
-timezone = os.getenv("TIMEZONE", "America/Chicago")
+timezone = os.getenv("TIMEZONE", "America/New_York")
 clock_update = int(os.getenv("CLOCK_INTERNET_UPDATE", 3600))
 disable_internet = os.getenv("DISABLE_INTERNET", "false").lower() == "true"
 clock_enabled = os.getenv("CLOCK_ENABLED", "true").lower() == "true"
@@ -43,7 +43,7 @@ time_format = os.getenv("TIME_FORMAT", "24")
 
 it = InternetTime(
     wifi,
-    os.getenv("TIMEZONE", "America/Chicago"),
+    os.getenv("TIMEZONE", "America/New_York"),
     debug=True,
     seconds_between_updates=clock_update,
     disable_internet=disable_internet,
